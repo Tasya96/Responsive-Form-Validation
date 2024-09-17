@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--ionicons-->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--ionicons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" /> <!--font awesome-->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form content">
+                <header>Sign Up</header>
+                <p id="result"></p>
+
+                <form action="" name="Formfill" onsubmit="return validation()">
+                    <div class="field input-field">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" name="username" id="Username" placeholder="Username">
+                    </div>
+                    <div class="field input-field">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="text" name="email" id="Email" placeholder="Email">
+                    </div>
+                    <div class="field input-field">
+                        <i class="fa-solid fa-eye show-password"></i>
+                        <input type="password" name="password" id="Password" placeholder="Password" class="password-input">
+                    </div>
+                    <div class="field input-field">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" name="repeat-password" id="CPassword" placeholder="Repeat Password">
+                    </div>
+                    <div class="field button-field">
+                        <button type="submit" onclick="validation()">Sign Up</button>
+                    </div>
+                 </form>
+                    <div class="form-link">
+                        <p>You already had an account? <a href="login.html">Log in</a></p>
+                    </div>
+            </div>
+            <div class="popup" id="popup">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <h2>Thank you!</h2>
+                <p>Your Registration is Success. Thanks!</p>
+                <a href="login.html"><button onclick="CloseSlide()">OK</button></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
