@@ -22,7 +22,7 @@ function validation() {
         return false;
     } 
     else if (!isValidUsername(document.Formfill.Username.value)) {    
-        document.getElementById("result").innerHTML="Starts with an alphabet, at least 5 characters and only one word";
+        document.getElementById("result").innerHTML="Username must start with an alphabet, at least 5 characters and only one word";
         return false;
     } 
     else if (document.Formfill.Email.value=="") {
@@ -42,7 +42,7 @@ function validation() {
         return false;
     } 
     else if (document.Formfill.CPassword.value=="") {
-        document.getElementById("result").innerHTML="Enter confirm password";
+        document.getElementById("result").innerHTML="Enter repeat password";
         return false;
     } 
     else if (document.Formfill.CPassword.value !== document.Formfill.Password.value) {
